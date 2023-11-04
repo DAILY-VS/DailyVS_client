@@ -36,7 +36,7 @@ const RouteWithNavFooter = () => {
         {isAuthenticated ? (
           <Route path="/create" element={<Create />} />
         ) : (
-          <Route path="/my-page/fix" element={<Create />} />
+          <Route path="/create" element={<Main />} />
         )}
         {isAuthenticated ? (
           <Route path="/my-page" element={<Mypage />} />
