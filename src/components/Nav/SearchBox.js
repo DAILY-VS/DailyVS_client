@@ -28,7 +28,7 @@ const SearchBox = () => {
   return (
     <Container>
       <SearchButton onClick={performSearch}>
-        <SearchImg src="/images/Buttons/search_b.png" alt="검색" />
+        <SearchImg src="/media/images/Buttons/search_b.png" alt="검색" />
       </SearchButton>
 
       <SearchInput
@@ -40,7 +40,7 @@ const SearchBox = () => {
         onKeyPress={handleKeyPress}
       />
       <DeleteImg
-        src="/images/Buttons/deleteBtn.png"
+        src="/media/images/Buttons/deleteBtn.png"
         alt="삭제"
         onClick={handleClear}
       />

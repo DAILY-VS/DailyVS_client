@@ -62,7 +62,7 @@ export const ArrowLeft = ({ onClick, style, opacity = 1 }) => {
 
   return (
     <img
-      src="/images/Buttons/arrowLeft.png"
+      src="/media/images/Buttons/arrowLeft.png"
       alt="arrowLeft"
       style={{
         ...style,
@@ -90,7 +90,7 @@ export const ArrowRight = ({ onClick, style, opacity = 1 }) => {
   );
   return (
     <img
-      src="/images/Buttons/arrowRight.png"
+      src="/media/images/Buttons/arrowRight.png"
       style={{
         ...style,
         width: 40,
@@ -117,8 +117,8 @@ export const CommentLikeBtn = ({ onClick, liked = false }) => {
     <img
       src={
         !liked
-          ? '/images/Buttons/likeBtn.png'
-          : '/images/Buttons/likeBtnRed.png'
+          ? '/media/images/Buttons/likeBtn.png'
+          : '/media/images/Buttons/likeBtnRed.png'
       }
       style={{
         width: 25,
@@ -143,7 +143,7 @@ export const ChevronDown = ({ onClick }) => {
     useClickEffect(ref);
   return (
     <img
-      src="/images/Buttons/chevron_down.svg"
+      src="/media/images/Buttons/chevron_down.svg"
       style={{
         width: 30,
         height: 30,

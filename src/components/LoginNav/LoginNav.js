@@ -7,7 +7,7 @@ const LoginNav = () => {
     <Container>
       <LoginNavContainer>
         <NavBackLogo to="/">
-          <BackImg src="/images/LoginNav/left_page.png" />
+          <BackImg src="/media/images/LoginNav/left_page.png" />
         </NavBackLogo>
       </LoginNavContainer>
     </Container>

@@ -72,8 +72,8 @@ const PollLikeBtn = () => {
   };
 
   const heartImgSrc = isLiked
-    ? '/images/Buttons/likeBtnRed.png'
-    : '/images/Buttons/likeBtn.png';
+    ? '/media/images/Buttons/likeBtnRed.png'
+    : '/media/images/Buttons/likeBtn.png';
 
   if (isAuthenticated)
     return (

@@ -16,7 +16,7 @@ const GenderGraph = ({ choices, man_choices, woman_choices }) => {
     <GenderContainer>
       <Toggler onClick={toggleRotation}>
         <Chevron
-          src="/images/Buttons/chevron.png"
+          src="/media/images/Buttons/chevron.png"
           alt="chevron"
           className={isRotated ? '' : 'rotated'}
         />

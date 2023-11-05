@@ -67,7 +67,7 @@ const Password = () => {
     <>
       <LoginNav />
       <Container onSubmit={onSubmit}>
-        <LogoImg src="/images/LoginNav/Only_Tex.png" />
+        <LogoImg src="/media/images/LoginNav/Only_Tex.png" />
         <EmailTitle>비밀번호 재설정</EmailTitle>
         <EmailQuestion>
           가입 시 사용한 계정을 입력해주세요. <br />

@@ -55,7 +55,7 @@ function CreateTTC({ formData, setFormData }) {
         ) : (
           <label className="custom-file-input">
             <span>이미지 넣기</span>
-            <img src="images/Buttons/image.png" alt="image icon" />
+            <img src="/media/images/Buttons/image.png" alt="image icon" />
             <input type="file" accept="image/*" onChange={handleFileChange} />
           </label>
         )}

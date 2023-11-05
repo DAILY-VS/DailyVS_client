@@ -62,7 +62,7 @@ const EIGraph = ({ choices, e_choices, i_choices }) => {
     <EIContainer>
       <Toggler onClick={toggleRotation}>
         <Chevron
-          src="/images/Buttons/chevron.png"
+          src="/media/images/Buttons/chevron.png"
           alt="chevron"
           className={isRotated ? '' : 'rotated'}
         />

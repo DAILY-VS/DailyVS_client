@@ -36,7 +36,7 @@ const MypageVoteList = () => {
       {voteList.map((poll, index) => (
         <LikeLine key={index} to={`/vote-detail/${poll.poll.id}`}>
           <LikeImage
-            src={'http://127.0.0.1:8000' + poll.poll.thumbnail}
+            src={'https://daily-vs.com' + poll.poll.thumbnail}
             alt={poll.poll?.title}
           />
           <TruncateText>

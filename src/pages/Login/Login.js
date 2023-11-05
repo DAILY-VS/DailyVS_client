@@ -42,7 +42,7 @@ const Login = ({ login, isAuthenticated }) => {
       <LoginNav />
       <Container>
         <LoginPage onSubmit={e => onSubmit(e)}>
-          <LoginLogo src="/images/Nav/main_logo.png" />
+          <LoginLogo src="/media/images/Nav/main_logo.png" />
           <LoginIdInput
             type="text"
             name="email"
@@ -64,7 +64,7 @@ const Login = ({ login, isAuthenticated }) => {
           </LoginSubmitBtn>
         </LoginPage>
         <KakaoLogin to={KAKAO_AUTH_URL}>
-          <KakaoImg src="/images/LoginNav/kakaoLogo.png" />
+          <KakaoImg src="/media/images/LoginNav/kakaoLogo.png" />
           카카오 로그인
         </KakaoLogin>
         <LoginAsk>

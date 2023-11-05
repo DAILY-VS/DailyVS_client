@@ -83,10 +83,10 @@ function MainHero({ data }) {
           <Title>{!!todayPoll && todayPoll.poll?.title}</Title>
           <VS>
             <div>
-              <img src="/images/Letters/v.svg" alt="V of VS" />
+              <img src="/media/images/Letters/v.svg" alt="V of VS" />
             </div>
             <div>
-              <img src="/images/Letters/s.svg" alt="S of VS" />
+              <img src="/media/images/Letters/s.svg" alt="S of VS" />
             </div>
           </VS>
           <ButtonPress>
@@ -115,7 +115,7 @@ function MainHero({ data }) {
             <div>
               <TVImgLeft ref={TVImgLeftRef}>
                 <img
-                  src={`http://127.0.0.1:8000${data?.choice1}`}
+                  src={`https://daily-vs.com/api/${data?.choice1}`}
                   alt="choice1"
                 />
                 <div>
@@ -128,7 +128,7 @@ function MainHero({ data }) {
             <div>
               <TVImgRight ref={TVImgRightRef}>
                 <img
-                  src={`http://127.0.0.1:8000${data?.choice2}`}
+                  src={`https://daily-vs.com/api/${data?.choice2}`}
                   alt="choice2"
                 />
                 <div>
@@ -146,7 +146,7 @@ function MainHero({ data }) {
               <h2>오늘의 포춘쿠키 뽑으러 가기</h2>
             </div>
             <div className="fortuneIcon">
-              <img src="/images/Fortune/Cookie.png" alt="포춘쿠키" />
+              <img src="/media/images/Fortune/Cookie.png" alt="포춘쿠키" />
             </div>
           </FortuneContainer>
           <MakeVoteContainer onClick={handleMakeVoteClick} className="heroMenu">

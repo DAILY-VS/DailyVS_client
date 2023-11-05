@@ -6,8 +6,8 @@ const ErrorPage = () => {
   return (
     <Container>
       <ImgSection>
-        <BlueFace src="/images/ErrorPage/404.png" />
-        <RedFace src="/images/ErrorPage/404r.png" />
+        <BlueFace src="/media/images/ErrorPage/404.png" />
+        <RedFace src="/media/images/ErrorPage/404r.png" />
       </ImgSection>
       <Number>404</Number>
       <Errormessage>Page not found</Errormessage>

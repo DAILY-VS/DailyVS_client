@@ -27,7 +27,7 @@ const Email = () => {
       <LoginNav />
       <Container>
         <EmailTitle>이메일 인증</EmailTitle>
-        <LogoImg src="/images/Nav/main_logo.png" />
+        <LogoImg src="/media/images/Nav/main_logo.png" />
         <EmailContent>
           {!selectedEmail ? (
             <div>

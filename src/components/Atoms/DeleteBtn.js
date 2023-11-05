@@ -8,7 +8,7 @@ function DeleteBtn({ onClick, index }) {
 
   return (
     <img
-      src="/images/Buttons/delete.png"
+      src="/media/images/Buttons/delete.png"
       style={{
         width: 35,
         height: 35,

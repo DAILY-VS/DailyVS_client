@@ -57,7 +57,20 @@ const AuthSubmitBtn = ({ isFormValid }) => {
       headers.append('Authorization', `Bearer ${accessToken}`);
     }
 
-    const requestOptions = {
+    // const requestOptions = {
+    //   method: 'POST',
+    //   headers: headers,
+    //   body: JSON.stringify({
+    //     choice_number: selectedOption,
+    //     choice_id: selectedChoice,
+    //     category_list: selectedCategoryList,
+    //     gender: selectedGender,
+    //     mbti: selectedMBTI,
+    //     age: selectedAge,
+    //   }),
+    // };
+
+    fetch(`https://daily-vs.com/api/${detailId}/poll_result_page`, {
       method: 'POST',
       headers: headers,
       body: JSON.stringify({
@@ -68,9 +81,7 @@ const AuthSubmitBtn = ({ isFormValid }) => {
         mbti: selectedMBTI,
         age: selectedAge,
       }),
-    };
-
-    fetch(`https://daily-vs.com/api/${detailId}/poll_result_page`, requestOptions)
+    })
       .then(response => response.json())
       .then(result => {
         console.log('서버 응답:', result);

@@ -107,7 +107,7 @@ const Modify = ({ isAuthenticated }) => {
   return (
     <SignupPage>
       <SignupContainer>
-        <SignupLogo src="/images/LoginNav/Only_Tex.png" />
+        <SignupLogo src="/media/images/LoginNav/Only_Tex.png" />
         <ModifyTitle>개인정보 수정하기</ModifyTitle>
         <MBTIDropdown
           value={userInformation.mbti}

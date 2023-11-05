@@ -90,7 +90,7 @@ function Create() {
     const headers = new Headers();
     headers.append('Authorization', `Bearer ${accessToken}`);
 
-    fetch(`http://localhost:8000/create`, {
+    fetch(`https://daily-vs.com/api/create`, {
       method: 'POST',
       body: sendData,
       headers: headers,

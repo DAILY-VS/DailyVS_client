@@ -62,7 +62,7 @@ const PJGraph = ({ choices, p_choices, j_choices }) => {
     <PJContainer>
       <Toggler onClick={toggleRotation}>
         <Chevron
-          src="/images/Buttons/chevron.png"
+          src="/media/images/Buttons/chevron.png"
           alt="chevron"
           className={isRotated ? '' : 'rotated'}
         />

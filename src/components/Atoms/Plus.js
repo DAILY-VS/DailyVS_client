@@ -6,7 +6,7 @@ const Plus = () => {
   const { handleBtnMD, handleBtnMU } = useClickEffect(refPlus);
   return (
     <img
-      src="/images/Buttons/plus.png"
+      src="/media/images/Buttons/plus.png"
       style={{
         width: 40,
         height: 40,

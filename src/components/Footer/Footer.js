@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterMenuSection>presented by</FooterMenuSection>
-      <FooterTeamLogo src="/images/Footer/team_logo.png" />
+      <FooterTeamLogo src="/media/images/Footer/team_logo.png" />
     </FooterContainer>
   );
 };

@@ -115,7 +115,7 @@ const Signup = ({ signup, isAuthenticated }) => {
       <LoginNav />
       <SignupPage>
         <SignupContainer onSubmit={onSubmit}>
-          <SignupLogo src="/images/LoginNav/Only_Tex.png" />
+          <SignupLogo src="/media/images/LoginNav/Only_Tex.png" />
           <SignupLabel>이메일</SignupLabel>
           <TextInput
             value={email}
@@ -141,7 +141,7 @@ const Signup = ({ signup, isAuthenticated }) => {
             확인 비밀번호
             {passwordMatch && (
               <PasswordMatchText>
-                비밀번호 일치 <PassWordCheck src="images/LoginNav/check.png" />
+                <PassWordCheck src="/media/images/LoginNav/check.png" />
               </PasswordMatchText>
             )}
           </SignupLabel>

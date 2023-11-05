@@ -29,7 +29,7 @@ const KakaoAuth = () => {
       const token = res.data.access_token;
       console.log('ttttt', token);
       const accessTokenPost = await axios.post(
-        `http://localhost:8000/accounts/kakao/login/callback/`,
+        `https://daily-vs.com/api/accounts/kakao/login/callback/`,
         { code: code, access: token },
         {
           headers: { Authorization: code },

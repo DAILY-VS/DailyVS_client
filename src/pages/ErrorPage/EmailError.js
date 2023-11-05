@@ -6,8 +6,8 @@ const EmailError = () => {
   return (
     <Container>
       <ImgSection>
-        <RedFace src="/images/ErrorPage/404.png" />
-        <BlueFace src="/images/ErrorPage/mail.png" />
+        <RedFace src="/media/images/ErrorPage/404.png" />
+        <BlueFace src="/media/images/ErrorPage/mail.png" />
       </ImgSection>
       <Number>404</Number>
       <ErrorKorean>이메일 인증에 실패하였습니다</ErrorKorean>

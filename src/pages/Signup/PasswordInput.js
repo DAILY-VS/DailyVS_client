@@ -81,7 +81,7 @@ const PasswordInput = () => {
     <>
       <LoginNav />
       <Container onSubmit={onSubmit}>
-        <LogoImg src="/images/LoginNav/Only_Tex.png" />
+        <LogoImg src="/media/images/LoginNav/Only_Tex.png" />
         <PasswordTitle>비밀번호 재설정</PasswordTitle>
         <PasswordContent>새로운 비밀번호를 설정해주세요</PasswordContent>
         <PasswordQuestion>
@@ -105,7 +105,7 @@ const PasswordInput = () => {
         <PasswordLabel>
           {passwordMatch && (
             <PasswordMatchText>
-              비밀번호 일치 <PassWordCheck src="images/LoginNav/check.png" />
+              <PassWordCheck src="/media/images/LoginNav/check.png" />
             </PasswordMatchText>
           )}
         </PasswordLabel>

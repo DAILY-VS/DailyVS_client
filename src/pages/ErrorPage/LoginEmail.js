@@ -6,7 +6,7 @@ const LoginEmail = () => {
   return (
     <Container>
       <ImgSection>
-        <BlueFace src="/images/ErrorPage/mail.png" />
+        <BlueFace src="/media/images/ErrorPage/mail.png" />
       </ImgSection>
       <ErrorKorean>
         이메일 인증 완료 후 <br /> 로그인해주세요

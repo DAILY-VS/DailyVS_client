@@ -61,7 +61,7 @@ const FixPassWord = () => {
 
   return (
     <Container>
-      <SignupLogo src="/images/LoginNav/Only_Tex.png" />
+      <SignupLogo src="/media/images/LoginNav/Only_Tex.png" />
       <PasswordModify>비밀번호 변경하기</PasswordModify>
       <SignupLabel>비밀번호(8자 이상 15자 이하) </SignupLabel>
       <TextInput
@@ -78,7 +78,7 @@ const FixPassWord = () => {
         확인 비밀번호
         {passwordMatch && (
           <PasswordMatchText>
-            비밀번호 일치 <PassWordCheck src="/images/LoginNav/check.png" />
+            <PassWordCheck src="/media/images/LoginNav/check.png" />
           </PasswordMatchText>
         )}
       </SignupLabel>

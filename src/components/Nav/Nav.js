@@ -84,7 +84,7 @@ const Nav = ({ checkAuthenticated, load_user, logout, isAuthenticated }) => {
             height={25}
           /> */}
           <NavLogo to="/">
-            <LogoImg src="/images/Nav/Row.png" alt="로고" />
+            <LogoImg src="/media/images/Nav/Row.png" alt="로고" />
           </NavLogo>
 
           <SearchMyPage>
@@ -94,7 +94,7 @@ const Nav = ({ checkAuthenticated, load_user, logout, isAuthenticated }) => {
             {isAuthenticated ? (
               <>
                 <NavLink2 to="/my-page">
-                  <img src="/images/Nav/Logged.png" alt="마이페이지" />
+                  <img src="/media/images/Nav/Logged.png" alt="마이페이지" />
                   <UserNickNameContainer>
                     <UserNickName>{userInfo.nickname}</UserNickName>님
                   </UserNickNameContainer>
@@ -105,7 +105,7 @@ const Nav = ({ checkAuthenticated, load_user, logout, isAuthenticated }) => {
               </>
             ) : (
               <NavLink1 to="/login">
-                <img src="/images/Nav/unLogged.png" alt="로그인" />
+                <img src="/media/images/Nav/unLogged.png" alt="로그인" />
                 로그인
               </NavLink1>
             )}

@@ -33,7 +33,7 @@ export const load_user = () => async dispatch => {
 
     try {
       const res = await axios.get(
-        `http://127.0.0.1:8000/accounts/user`,
+        `https://daily-vs.com/api/accounts/user`,
         config,
       );
 
@@ -66,7 +66,7 @@ export const checkAuthenticated = () => async dispatch => {
 
     try {
       const res = await axios.post(
-        `http://localhost:8000/accounts/token/verify/`,
+        `https://daily-vs.com/api/accounts/token/verify/`,
         body,
         config,
       );
@@ -103,7 +103,7 @@ export const login = (email, password) => async dispatch => {
 
   try {
     const res = await axios.post(
-      `http://localhost:8000/accounts/login/`,
+      `https://daily-vs.com/api/accounts/login/`,
       body,
       config,
     );
@@ -143,7 +143,7 @@ export const signup =
 
     try {
       const res = await axios.post(
-        `http://127.0.0.1:8000/accounts/`,
+        `https://daily-vs.com/api/accounts/`,
         body,
         config,
       );
@@ -193,7 +193,7 @@ export const kakaoAuthenticate = (state, code) => async dispatch => {
 
     try {
       const res = await axios.post(
-        `http://127.0.0.1:8000/accounts/kakao/login/callback/?${formBody}`,
+        `https://daily-vs.com/api/accounts/kakao/login/callback/?${formBody}`,
         config,
       );
 
@@ -219,7 +219,7 @@ export const verify = (uid, token) => async dispatch => {
 
   try {
     await axios.post(
-      'http://127.0.0.1:8000/account/auth/users/activation/',
+      'https://daily-vs.com/api/accounts/auth/users/activation/',
       body,
       config,
     );
@@ -245,7 +245,7 @@ export const reset_password = email => async dispatch => {
 
   try {
     await axios.post(
-      `http://127.0.0.1:8000/accounts/password/reset/`,
+      `https://daily-vs.com/api/accounts/password/reset/`,
       body,
       config,
     );
