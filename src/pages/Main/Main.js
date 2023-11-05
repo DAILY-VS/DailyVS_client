@@ -16,7 +16,7 @@ const Main = () => {
   const [todayPoll, setTodayPoll] = useState({});
 
   useEffect(() => {
-    fetch(`https://daily-vs.com/api`)
+    fetch(`https://daily-vs.com/api/`)
       .then(response => response.json())
       .then(result => {
         setNewPolls(result.polls);
