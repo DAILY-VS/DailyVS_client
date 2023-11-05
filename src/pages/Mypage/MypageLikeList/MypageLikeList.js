@@ -17,7 +17,7 @@ const MypageLikeList = () => {
       headers.append('Authorization', `Bearer ${accessToken}`);
     }
 
-    fetch(`http://127.0.0.1:8000/mypage_poll_like?page=${currentPage}`, {
+    fetch(`https://daily-vs.com/api/mypage_poll_like?page=${currentPage}`, {
       method: 'GET',
       headers: headers,
     })

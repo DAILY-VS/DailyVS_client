@@ -13,7 +13,7 @@ const MainCarousel = ({ loading, apiList }) => {
 
   useEffect(() => {
     if (!loading) {
-      fetch(`http://localhost:8000/`)
+      fetch(`https://daily-vs.com/api/`)
         .then(response => response.json())
         .then(result => {
           setMainVote(result.promotion_polls);

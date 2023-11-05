@@ -48,7 +48,7 @@ const SubmitBtn = ({ isFormValid }) => {
       }),
     };
 
-    fetch(`http://localhost:8000/${detailId}/poll_result_page`, requestOptions)
+    fetch(`https://daily-vs.com/api/${detailId}/poll_result_page`, requestOptions)
       .then(response => response.json())
       .then(result => {
         console.log('서버 응답:', result);

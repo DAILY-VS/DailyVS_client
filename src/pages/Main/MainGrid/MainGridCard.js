@@ -9,7 +9,7 @@ const MainGridCard = ({ id, thumbnail, title }) => {
   };
   return (
     <Container onClick={onClickDetailButton}>
-      <GridThumbnail src={'http://127.0.0.1:8000' + thumbnail} alt={title} />
+      <GridThumbnail src={'https://daily-vs.com/api' + thumbnail} alt={title} />
       {/* <GridThumbnail src={thumbnail} /> */}
       <GridName>{title}</GridName>
     </Container>

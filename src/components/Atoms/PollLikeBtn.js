@@ -30,7 +30,7 @@ const PollLikeBtn = () => {
       headers: headers,
     };
 
-    fetch(`http://127.0.0.1:8000/${detailId}/like`, requestOptions)
+    fetch(`https://daily-vs.com/api/${detailId}/like`, requestOptions)
       .then(response => response.json())
       .then(result => {
         setLikeInfo(result);
@@ -61,7 +61,7 @@ const PollLikeBtn = () => {
       poll_id: detailId,
     });
 
-    fetch(`http://127.0.0.1:8000/${detailId}/like`, {
+    fetch(`https://daily-vs.com/api/${detailId}/like`, {
       ...requestOptions,
       body: requestBody,
     })

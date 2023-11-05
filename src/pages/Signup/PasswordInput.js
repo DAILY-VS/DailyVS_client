@@ -47,10 +47,10 @@ const PasswordInput = () => {
 
     console.log(requestBody);
     console.log(
-      `http://127.0.0.1:8000/accounts/password/reset/confirm/${uid}/${token}`,
+      `https://daily-vs.com/api/accounts/password/reset/confirm/${uid}/${token}`,
     );
     fetch(
-      `http://127.0.0.1:8000/accounts/password/reset/confirm/${uid}/${token}/`,
+      `https://daily-vs.com/api/accounts/password/reset/confirm/${uid}/${token}/`,
       {
         method: 'POST',
         headers: {

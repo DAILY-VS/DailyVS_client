@@ -31,7 +31,7 @@ function Comment({ voteId, voteChoice }) {
       },
     };
 
-    fetch(`http://127.0.0.1:8000/accounts/user_info/`, {
+    fetch(`https://daily-vs.com/api/accounts/user_info/`, {
       headers: config.headers,
     })
       .then(response => response.json())
@@ -55,7 +55,7 @@ function Comment({ voteId, voteChoice }) {
     };
 
     fetch(
-      `http://127.0.0.1:8000/${voteId}/comment/newest?page=${currentPage}`,
+      `https://daily-vs.com/api/${voteId}/comment/newest?page=${currentPage}`,
       {
         headers: config.headers,
       },

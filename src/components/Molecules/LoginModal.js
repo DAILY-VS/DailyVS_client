@@ -23,7 +23,7 @@ const LoginModal = ({ isOpen, onClose }) => {
 
   const handleInformationClick = () => {
     setIsLoading(true);
-    fetch(`http://127.0.0.1:8000/${detailId}/poll_result_page`, {
+    fetch(`https://daily-vs.com/api/${detailId}/poll_result_page`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -17,7 +17,7 @@ const MainGrid = ({ loading }) => {
 
   useEffect(() => {
     if (!loading) {
-      fetch(`http://localhost:8000/`)
+      fetch(`https://daily-vs.com/api/`)
         .then(response => response.json())
         .then(result => {
           setMainGridVote(result.polls);

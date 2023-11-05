@@ -61,7 +61,7 @@ const Detail = () => {
       headers.append('Authorization', `Bearer ${accessToken}`);
     }
 
-    fetch(`http://localhost:8000/${detailId}`, {
+    fetch(`https://daily-vs.com/api/${detailId}`, {
       method: 'GET',
       headers: headers,
     })

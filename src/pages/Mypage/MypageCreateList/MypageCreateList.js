@@ -17,7 +17,7 @@ const MypageCreateList = () => {
       headers.append('Authorization', `Bearer ${accessToken}`);
     }
 
-    fetch(`http://127.0.0.1:8000/mypage_my_poll?page=${currentPage}`, {
+    fetch(`https://daily-vs.com/api/mypage_my_poll?page=${currentPage}`, {
       method: 'GET',
       headers: headers,
     })

@@ -45,7 +45,7 @@ function Create() {
       },
     };
 
-    fetch(`http://127.0.0.1:8000/accounts/user_info/`, {
+    fetch(`https://daily-vs.com/api/accounts/user_info/`, {
       headers: config.headers,
     })
       .then(response => response.json())

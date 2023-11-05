@@ -26,7 +26,7 @@ const CommentLikeBtn = ({ commentId }) => {
       headers: headers,
     };
 
-    fetch(`http://127.0.0.1:8000/${commentId}/comment_like`, requestOptions)
+    fetch(`https://daily-vs.com/api/${commentId}/comment_like`, requestOptions)
       .then(response => response.json())
       .then(result => {
         setLikeInfo(result);
@@ -54,7 +54,7 @@ const CommentLikeBtn = ({ commentId }) => {
       headers: headers,
     };
 
-    fetch(`http://127.0.0.1:8000/${commentId}/comment_like`, {
+    fetch(`https://daily-vs.com/api/${commentId}/comment_like`, {
       ...requestOptions,
     })
       .then(response => response.json())

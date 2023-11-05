@@ -14,7 +14,7 @@ const MainVoteCard = ({ id, thumbnail, title, content }) => {
   return (
     <Container>
       <VoteThumnail
-        src={'http://127.0.0.1:8000' + thumbnail}
+        src={'https://daily-vs.com/api' + thumbnail}
         alt="투표썸네일"
         onClick={onClickDetailButton}
       />

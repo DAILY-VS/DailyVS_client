@@ -16,7 +16,7 @@ const Email = () => {
   const handleResendEmail = async () => {
     console.log('click');
     try {
-      await axios.post(`http://localhost:8000/accounts/resend-email/`);
+      await axios.post(`https://daily-vs.com/api/accounts/resend-email/`);
     } catch (error) {
       console.error('Error resending email:', error);
     }

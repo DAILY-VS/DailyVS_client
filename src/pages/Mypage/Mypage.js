@@ -26,7 +26,7 @@ const Mypage = ({ logout }) => {
       headers: headers,
     };
 
-    fetch(`http://127.0.0.1:8000/mypage`, requestOptions)
+    fetch(`https://daily-vs.com/api/mypage`, requestOptions)
       .then(response => response.json())
       .then(result => {
         setUserInformation(result);

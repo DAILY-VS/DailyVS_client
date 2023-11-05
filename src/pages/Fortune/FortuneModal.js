@@ -30,7 +30,7 @@ const FortuneModal = ({ isOpen, onClose }) => {
       headers: headers,
     };
 
-    fetch(`http://127.0.0.1:8000/fortune/`, requestOptions)
+    fetch(`https://daily-vs.com/api/fortune/`, requestOptions)
       .then(response => response.json())
       .then(result => {
         setFortuneDetail(result);
@@ -64,7 +64,7 @@ const FortuneModal = ({ isOpen, onClose }) => {
       headers: headers,
     };
 
-    fetch(`http://127.0.0.1:8000/fortune/`, requestOptions)
+    fetch(`https://daily-vs.com/api/fortune/`, requestOptions)
       .then(response => response.json())
       .then(result => {
         setFortuneDetail(result);

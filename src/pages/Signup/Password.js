@@ -38,7 +38,7 @@ const Password = () => {
   };
 
   const sendResetPasswordRequest = email => {
-    fetch(`http://127.0.0.1:8000/accounts/password/reset/`, {
+    fetch(`https://daily-vs.com/api/accounts/password/reset/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

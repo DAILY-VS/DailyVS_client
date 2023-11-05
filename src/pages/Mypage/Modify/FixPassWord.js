@@ -43,7 +43,7 @@ const FixPassWord = () => {
     };
 
     fetch(
-      `http://localhost:8000/accounts/password/reset/confirm/${uid}/${token}/`,
+      `https://daily-vs.com/api/accounts/password/reset/confirm/${uid}/${token}/`,
       requestOptions,
     )
       .then(response => response.json())

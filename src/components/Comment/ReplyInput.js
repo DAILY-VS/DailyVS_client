@@ -28,7 +28,7 @@ function ReplyInput({ voteId, voteChoice, onCommentSubmit, parentId }) {
       },
     };
 
-    fetch(`http://127.0.0.1:8000/accounts/user_info/`, {
+    fetch(`https://daily-vs.com/api/accounts/user_info/`, {
       headers: config.headers,
     })
       .then(response => response.json())
@@ -60,7 +60,7 @@ function ReplyInput({ voteId, voteChoice, onCommentSubmit, parentId }) {
     };
 
     console.log('곰돌이', headers);
-    fetch(`http://localhost:8000/${voteId}/comment`, requestOptions)
+    fetch(`https://daily-vs.com/api/${voteId}/comment`, requestOptions)
       .then(response => response.json())
       .then(data => {
         console.log('성공:', data);

@@ -34,7 +34,7 @@ const RevoteBtn = () => {
       headers: headers,
     };
 
-    fetch(`http://127.0.0.1:8000/accounts/user_info/`, requestOptions)
+    fetch(`https://daily-vs.com/api/accounts/user_info/`, requestOptions)
       .then(response => response.json())
       .then(response => console.log(response))
       .then(result => {
@@ -70,7 +70,7 @@ const RevoteBtn = () => {
       }),
     };
 
-    fetch(`http://localhost:8000/${detailId}/poll_result_page`, requestOptions)
+    fetch(`https://daily-vs.com/api/${detailId}/poll_result_page`, requestOptions)
       .then(response => response.json())
       .then(result => {
         console.log('서버 응답:', result);

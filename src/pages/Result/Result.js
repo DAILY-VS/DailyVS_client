@@ -43,7 +43,7 @@ const Result = () => {
         },
       };
 
-      fetch(`http://localhost:8000/${detailId}/poll_result_page`, {
+      fetch(`https://daily-vs.com/api/${detailId}/poll_result_page`, {
         headers: config.headers,
       })
         .then(response => response.json())
@@ -55,7 +55,7 @@ const Result = () => {
           }
         });
     } else {
-      fetch(`http://localhost:8000/${detailId}/poll_result_page`)
+      fetch(`https://daily-vs.com/api/${detailId}/poll_result_page`)
         .then(response => response.json())
         .then(result => {
           if (result.detail === '찾을 수 없습니다.') {
