@@ -41,6 +41,7 @@ const KakaoAuth = () => {
       localStorage.setItem('token', token);
       localStorage.setItem('refresh', yourToken);
       localStorage.setItem('access', ourToken);
+      localStorage.setItem('isKakao', true);
       kakaoAuthSuccess();
       navigate('/');
     } catch (err) {

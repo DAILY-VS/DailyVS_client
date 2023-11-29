@@ -85,6 +85,7 @@ export default function (state = initialState, action) {
     case KAKAO_LOGOUT:
       localStorage.removeItem('access');
       localStorage.removeItem('refresh');
+      localStorage.removeItem('isKakao');
       window.location.reload('/');
       return {
         ...state,
