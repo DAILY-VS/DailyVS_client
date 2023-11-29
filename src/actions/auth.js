@@ -56,7 +56,6 @@ export const load_user = () => async dispatch => {
 
 export const checkAuthenticated = () => async dispatch => {
   const isKakaoAuthenticated = localStorage.getItem('isKakao');
-  console.log(isKakaoAuthenticated);
   if (!isKakaoAuthenticated) {
     if (localStorage.getItem('access')) {
       const config = {
