@@ -83,6 +83,7 @@ export default function (state = initialState, action) {
     case SIGNUP_FAIL:
     case KAKAO_AUTH_FAIL:
     case KAKAO_LOGOUT:
+      localStorage.removeItem('token');
       localStorage.removeItem('access');
       localStorage.removeItem('refresh');
       localStorage.removeItem('isKakao');

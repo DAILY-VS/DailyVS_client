@@ -55,79 +55,40 @@ export const load_user = () => async dispatch => {
 };
 
 export const checkAuthenticated = () => async dispatch => {
-  const isKakaoAuthenticated = localStorage.getItem('isKakao');
-  if (!isKakaoAuthenticated) {
-    if (localStorage.getItem('access')) {
-      const config = {
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-      };
+  if (localStorage.getItem('access')) {
+    const config = {
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+    };
 
-      const body = JSON.stringify({ token: localStorage.getItem('access') });
+    const body = JSON.stringify({ token: localStorage.getItem('access') });
 
-      try {
-        const res = await axios.post(
-          `${process.env.REACT_APP_HOST}/accounts/token/verify/`,
-          body,
-          config,
-        );
+    try {
+      const res = await axios.post(
+        `${process.env.REACT_APP_HOST}/accounts/token/verify/`,
+        body,
+        config,
+      );
 
-        if (res.status === 401) {
-          window.location.reload('/');
-        }
-        if (res.data.code !== 'token_not_valid') {
-          dispatch({
-            type: AUTHENTICATED_SUCCESS,
-          });
-        } else {
-          dispatch(refreshToken());
-        }
-      } catch (err) {
+      if (res.status === 401) {
+        window.location.reload('/');
+      }
+      if (res.data.code !== 'token_not_valid') {
+        dispatch({
+          type: AUTHENTICATED_SUCCESS,
+        });
+      } else {
         dispatch(refreshToken());
       }
-    } else {
-      dispatch({
-        type: AUTHENTICATED_FAIL,
-      });
+    } catch (err) {
+      dispatch(refreshToken());
     }
-  } else if (isKakaoAuthenticated) {
-    if (localStorage.getItem('access')) {
-      const config = {
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-      };
-
-      const body = JSON.stringify({ token: localStorage.getItem('access') });
-
-      try {
-        const res = await axios.post(
-          `${process.env.REACT_APP_HOST}/accounts/token/verify/`,
-          body,
-          config,
-        );
-
-        if (res.status === 401) {
-          window.location.reload('/');
-        }
-        if (res.data.code !== 'token_not_valid') {
-          dispatch({
-            type: AUTHENTICATED_SUCCESS,
-          });
-        } else {
-          dispatch(refreshKakao());
-        }
-      } catch (err) {
-        dispatch(refreshKakao());
-      }
-    } else {
-      dispatch({
-        type: AUTHENTICATED_FAIL,
-      });
-    }
+  } else {
+    dispatch({
+      type: AUTHENTICATED_FAIL,
+    });
   }
 };
 
@@ -156,7 +117,7 @@ export const refreshKakao = () => async dispatch => {
 
   try {
     const res = await axios.post(
-      `${process.env.REACT_APP_HOST}/accounts/token/refresh/`,
+      'https://kauth.kakao.com/oauth/token',
       body,
       config,
     );
@@ -170,6 +131,7 @@ export const refreshKakao = () => async dispatch => {
     dispatch({
       type: AUTHENTICATED_FAIL,
     });
+
     alert('토큰 갱신 시간이 만료되었습니다. 다시 로그인해주세요.');
     dispatch({
       type: KAKAO_LOGOUT,
@@ -213,6 +175,7 @@ export const refreshToken = () => async dispatch => {
     dispatch({
       type: AUTHENTICATED_FAIL,
     });
+    localStorage.removeItem('isKakao');
     alert('토큰 갱신 시간이 만료되었습니다. 다시 로그인해주세요.');
     dispatch({
       type: LOGOUT,
