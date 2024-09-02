@@ -1,0 +1,32 @@
+# This is a combination of 3 commits.
+# This is the 1st commit message:
+
+#341 Add: README.md 트러블 슈팅  업데이트
+
+# This is the commit message #2:
+
+#341 Fix: Image 경로 수정
+
+# This is the commit message #3:
+
+Add files via upload
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Mon Sep 2 11:57:27 2024 +0900
+#
+# interactive rebase in progress; onto 54620c2
+# Last commands done (19 commands done):
+#    squash e1ab4aa #341 Fix: Image 경로 수정
+#    squash 74cdeda Add files via upload
+# Next command to do (1 remaining command):
+#    pick b4a8d5c Update README.md
+# You are currently rebasing branch 'develop' on '54620c2'.
+#
+# Changes to be committed:
+#	modified:   README.md
+#	new file:   docs/images/Start.png
+#	new file:   docs/images/chart.png
+#	new file:   docs/images/main.png
+#
