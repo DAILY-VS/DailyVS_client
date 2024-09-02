@@ -4,7 +4,12 @@
 </div>
 <br><br>
 
-[👉 DailyVS 바로가기](https://daily-vs.com/)
+
+<div align="center">
+  <img src="./docs/images/Start.png" alt="start">
+</div>
+
+</div>
 
 ## 📝 DailyVS 소개
 
@@ -41,7 +46,11 @@ DailyVS는 사용자들이 성별, 나이, MBTI 등 다양한 카테고리에 �
 
 ## 4. 핵심 기능
 
-![chart](./docs/images/chart.png)
+> **메인페이지**
+
+사용자들은 캐러셀과 애니메이션으로 이루어진 동적인 메인 페이지에서 원하는 주제를 선택할 수 있습니다.
+
+![main](./docs/images/main.png)
 
 > **주제 게시**
 
@@ -54,6 +63,8 @@ DailyVS는 사용자들이 성별, 나이, MBTI 등 다양한 카테고리에 �
 > **통계 조회**
 
 다양한 카테고리별로 투표 결과의 통계를 조회할 수 있습니다. 이는 더 나은 시각화를 위해 도넛 차트 형태로 제공됩니다.
+
+![chart](./docs/images/chart.png)
 
 > **결과 공유**
 
@@ -199,7 +210,7 @@ const store = createStore(
 
 - **라우팅 및 리다이렉션 로직 구현**: - 리덕스에 저장된 로그인 상태(`isAuthenticated`)에 따라 라우트의 행동을 달리 지정합니다. 예를 들어, 로그인이 필요한 페이지(예: `/create`, `/my-page`, `/my-page/fix`)에 대해 로그인 상태가 아니면 메인 페이지로 리디렉션하도록 설정하고 있습니다.
 
-  ```
+```
   <Routes>
   {isAuthenticated ? (
     <Route path="/create" element={<Create />} />
@@ -207,10 +218,9 @@ const store = createStore(
     <Route path="/create" element={<Navigate to="/" replace />} />
   )}
   </Routes>
-  ```
+```
 
 ```
-</details>
 
 - **토큰 관리**:
     - 로그인 성공 시 토큰을 localStorage와 쿠키에 저장하고,
@@ -220,3 +230,4 @@ const store = createStore(
     - 로그인/로그아웃 시 UI가 동적으로 반응하도록 리액트 컴포넌트를 조정하고
     - 로그인 상태에 따라 네비게이션 바의 표시 항목 변경하는 등의 작업을 통해 UX를 향상시켰습니다.
 ```
+</details>
